@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Favorite_Place" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,244 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BWSL" translatesAutoresizingMaskIntoConstraints="NO" id="TyH-dp-Dsl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HUH-vO-5Uz">
+                                <rect key="frame" x="20" y="20" width="207" height="276"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-OF-8BB">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BANDRA-WORLI SEA LINK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T53-bh-N5J">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHREE SIDDHIVINAYAK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqL-it-56F">
+                                                <rect key="frame" x="0.0" y="26" width="177" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MARINE DRIVE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBS-z2-CEX">
+                                                <rect key="frame" x="0.0" y="52" width="112" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="WXc-qi-V9p">
+                                        <rect key="frame" x="0.0" y="103" width="171" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUMBAI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4c-eh-iDe">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="48"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="40"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="357-bH-u9b">
+                                                <rect key="frame" x="0.0" y="48" width="138" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="50"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-q9-WxA">
+                                        <rect key="frame" x="0.0" y="241" width="207" height="35"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="U10-R4-bop">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAHARASHTRA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brv-1y-BYA">
+                                                <rect key="frame" x="50" y="0.0" width="157" height="35"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9X-tC-B0t">
+                                <rect key="frame" x="199" y="499" width="202" height="38"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="XjQ-0M-1A8"/>
+                                    <constraint firstAttribute="width" constant="202" id="eXs-c4-eMl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="FIND OUT MORE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dMU-vL-J3b" kind="show" id="SQ7-pV-rle"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TyH-dp-Dsl" secondAttribute="trailing" id="8fl-S5-b5r"/>
+                            <constraint firstItem="F9X-tC-B0t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NJ8-hl-H9z"/>
+                            <constraint firstItem="HUH-vO-5Uz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RJj-a9-iyC"/>
+                            <constraint firstItem="TyH-dp-Dsl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TgL-J4-m1k"/>
+                            <constraint firstItem="HUH-vO-5Uz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="W7y-sp-GoB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F9X-tC-B0t" secondAttribute="bottom" constant="63" id="fhb-5Y-wSs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TyH-dp-Dsl" secondAttribute="bottom" id="qBK-R7-IR9"/>
+                            <constraint firstItem="TyH-dp-Dsl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ydg-wz-8Ue"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moreButton" destination="F9X-tC-B0t" id="Kz1-Qv-maz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-32" y="386"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="EHY-3Z-hPC">
+            <objects>
+                <viewController id="dMU-vL-J3b" customClass="DetailViewController" customModule="Favorite_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rb3-Bs-zK5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oo8-A9-jSt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GUn-bO-Ab9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mumbai2" translatesAutoresizingMaskIntoConstraints="NO" id="BWW-Gr-Btk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="PeF-ji-CJQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABOUT MUMBAI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3w-KE-BsH">
+                                <rect key="frame" x="207" y="52" width="186" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="1lR-i5-4Wi"/>
+                                    <constraint firstAttribute="height" constant="29" id="ojD-0u-5O3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdo-4z-gez">
+                                <rect key="frame" x="20" y="20" width="54" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.40154708300000003" blue="0.40820542929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="dMU-vL-J3b" eventType="touchUpInside" id="E18-Qm-vqR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="RfB-Yg-sjq">
+                                <rect key="frame" x="20" y="158" width="560" height="390"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="-12" translatesAutoresizingMaskIntoConstraints="NO" id="8yy-oc-SQi">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POPULATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-om-ZHQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="CGn-uZ-hUB"/>
+                                                    <constraint firstAttribute="width" constant="186" id="WXY-qs-2SA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="WXY-qs-2SA"/>
+                                                        <exclude reference="CGn-uZ-hUB"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Million" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-jJ-XF3">
+                                                <rect key="frame" x="0.0" y="29" width="65" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="0Zl-k7-Noy"/>
+                                                    <constraint firstAttribute="width" constant="186" id="brG-7L-3G0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="brG-7L-3G0"/>
+                                                        <exclude reference="0Zl-k7-Noy"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="-80" translatesAutoresizingMaskIntoConstraints="NO" id="X33-og-tgC">
+                                        <rect key="frame" x="0.0" y="49" width="560" height="341"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HISTORY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lb9-il-mym">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="QDd-Th-coq"/>
+                                                    <constraint firstAttribute="width" constant="186" id="ZTk-jX-h4N"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ZTk-jX-h4N"/>
+                                                        <exclude reference="QDd-Th-coq"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4D-6s-6hS">
+                                                <rect key="frame" x="0.0" y="-40" width="560" height="381"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="QVZ-Px-9bT"/>
+                                                    <constraint firstAttribute="width" constant="186" id="ZRN-lw-SMC"/>
+                                                </constraints>
+                                                <mutableString key="text">Mumbai is built on what was once an archipelago of seven islands: Bombay Island, Parel, Mazagaon, Mahim, Colaba, Worli, and Old Woman's Island (also known as Little Colaba).[51] It is not exactly known when these islands were first inhabited. Pleistocene sediments found along the coastal areas around Kandivali in northern Mumbai suggest that the islands were inhabited since the Stone Age.[52] Perhaps at the beginning of the Common era (2,000 years ago), or possibly earlier, they came to be occupied by the Koli fishing community.After India's independence in 1947, the territory of the Bombay Presidency retained by India was restructured into Bombay State. The area of Bombay State increased, after several erstwhile princely states that joined the Indian union were integrated into the state. Subsequently, the city became the capital of Bombay State.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ZRN-lw-SMC"/>
+                                                        <exclude reference="QVZ-Px-9bT"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oo8-A9-jSt" firstAttribute="top" secondItem="RfB-Yg-sjq" secondAttribute="bottom" constant="20" id="0MT-8K-aiu"/>
+                            <constraint firstItem="RfB-Yg-sjq" firstAttribute="top" secondItem="BWW-Gr-Btk" secondAttribute="bottom" constant="40" id="4Xs-hn-uDv"/>
+                            <constraint firstItem="RfB-Yg-sjq" firstAttribute="leading" secondItem="GUn-bO-Ab9" secondAttribute="leadingMargin" id="H1z-a9-5Zt"/>
+                            <constraint firstAttribute="trailing" secondItem="BWW-Gr-Btk" secondAttribute="trailing" id="OvP-Ht-Nd1"/>
+                            <constraint firstItem="BWW-Gr-Btk" firstAttribute="top" secondItem="GUn-bO-Ab9" secondAttribute="top" id="aMM-3p-vk2"/>
+                            <constraint firstItem="v3w-KE-BsH" firstAttribute="centerX" secondItem="GUn-bO-Ab9" secondAttribute="centerX" id="fb7-SM-Tq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RfB-Yg-sjq" secondAttribute="trailing" id="lAH-Bu-gmj"/>
+                            <constraint firstItem="BWW-Gr-Btk" firstAttribute="leading" secondItem="GUn-bO-Ab9" secondAttribute="leading" id="ocG-9i-RyC"/>
+                            <constraint firstItem="v3w-KE-BsH" firstAttribute="top" secondItem="rb3-Bs-zK5" secondAttribute="bottom" constant="32" id="r3X-c0-2uH"/>
+                            <constraint firstItem="RfB-Yg-sjq" firstAttribute="top" secondItem="v3w-KE-BsH" secondAttribute="bottom" constant="10" id="xh6-PB-sPg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="r3X-c0-2uH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CT4-tW-cy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="1175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BWSL" width="3467" height="2231"/>
+        <image name="compass" width="35" height="35"/>
+        <image name="mumbai2" width="1600" height="900"/>
+    </resources>
 </document>
