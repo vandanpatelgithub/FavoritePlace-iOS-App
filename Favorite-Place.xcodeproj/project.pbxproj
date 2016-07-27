@@ -13,6 +13,7 @@
 		624710601D48479400C8FAF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6247105F1D48479400C8FAF6 /* Assets.xcassets */; };
 		624710631D48479400C8FAF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624710611D48479400C8FAF6 /* LaunchScreen.storyboard */; };
 		6247106B1D4862D300C8FAF6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247106A1D4862D300C8FAF6 /* DetailViewController.swift */; };
+		6247106D1D488EB400C8FAF6 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247106C1D488EB400C8FAF6 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		624710621D48479400C8FAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624710641D48479400C8FAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6247106A1D4862D300C8FAF6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6247106C1D488EB400C8FAF6 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				624710611D48479400C8FAF6 /* LaunchScreen.storyboard */,
 				624710641D48479400C8FAF6 /* Info.plist */,
 				6247106A1D4862D300C8FAF6 /* DetailViewController.swift */,
+				6247106C1D488EB400C8FAF6 /* PhotosViewController.swift */,
 			);
 			path = "Favorite-Place";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6247106B1D4862D300C8FAF6 /* DetailViewController.swift in Sources */,
+				6247106D1D488EB400C8FAF6 /* PhotosViewController.swift in Sources */,
 				6247105B1D48479400C8FAF6 /* ViewController.swift in Sources */,
 				624710591D48479400C8FAF6 /* AppDelegate.swift in Sources */,
 			);
